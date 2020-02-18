@@ -18,9 +18,9 @@ class Needle {
     }
 
     show() {
-        beginShape();
         stroke(200);
-        noFill();
+        strokeWeight(2);
+        beginShape();
         for (let i = -this.r; i <= TWO_PI; i += PI) {
             let x_ = cos(i) * needleh / 2 + this.x;
             let y_ = sin(i) * needleh / 2 + this.y;
@@ -28,13 +28,13 @@ class Needle {
         }
         fill(255);
         if (this.int === true) {
-            stroke(255, 0, 30);
             strokeWeight(4);
+            stroke(255, 0, 30);
         }
         endShape();
-        //
-        ellipse(this.x, this.y, 10, 10);
-
+        strokeWeight(1.5);
+        ellipse(this.x, this.y, needleh / 4, needleh / 4);
+        strokeWeight(2);
     }
 
 }
