@@ -7,7 +7,7 @@ let counter = 0;
 let pi = 3.14;
 
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+    createCanvas(windowWidth, windowHeight);
     space = height / cracksN;
     needleh = space / 2;
 
