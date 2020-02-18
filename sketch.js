@@ -8,7 +8,7 @@ let counter = 0;
 let pi = 0;
 
 function setup() {
-    createCanvas(800, 700);
+    createCanvas(windowWidth, windowHeight);
     space = height / (height / 100);
     needleh = space / 2;
     //angleMode(DEGREES);
